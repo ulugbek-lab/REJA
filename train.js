@@ -1,35 +1,41 @@
-//MIT TASK C
-class Shop {
-  constructor(milk, water, chips) {
-    this.milk = milk;
-    this.water = water;
-    this.chips = chips;
-  }
-  getTime() {
-    const now = new Date();
-    return now.getHours() + ":" + now.getMinutes();
-  }
-  inStock() {
-    console.log(
-      `hozir ${this.getTime()} da ${this.milk} ta sut, ${this.water} suv va ${this.chips} chips bor `,
-    );
-  }
-  sell(product, amount) {
-    if (this[product] >= amount) {
-      this[product] -= amount;
-    } else {
-      console.log("mahsulot yetarli emas");
-    }
-  }
-  receive(product, amount) {
-    this[product] += amount;
-  }
+//MIT TASK D
+function add(first, second) {
+  return first.split("").sort().join("") === second.split("").sort().join("");
 }
-const shop = new Shop(4, 5, 2);
-shop.inStock();
-shop.sell("milk", 3);
-shop.receive("chips", 4);
-shop.inStock();
+console.log(add("yours", "sruoy"));
+
+//MIT TASK C
+// class Shop {
+//   constructor(milk, water, chips) {
+//     this.milk = milk;
+//     this.water = water;
+//     this.chips = chips;
+//   }
+//   getTime() {
+//     const now = new Date();
+//     return now.getHours() + ":" + now.getMinutes();
+//   }
+//   inStock() {
+//     console.log(
+//       `hozir ${this.getTime()} da ${this.milk} ta sut, ${this.water} suv va ${this.chips} chips bor `,
+//     );
+//   }
+//   sell(product, amount) {
+//     if (this[product] >= amount) {
+//       this[product] -= amount;
+//     } else {
+//       console.log("mahsulot yetarli emas");
+//     }
+//   }
+//   receive(product, amount) {
+//     this[product] += amount;
+//   }
+// }
+// const shop = new Shop(4, 5, 2);
+// shop.inStock();
+// shop.sell("milk", 3);
+// shop.receive("chips", 4);
+// shop.inStock();
 
 // //MIT TASK B
 // function countNumber(string) {
