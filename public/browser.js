@@ -1,9 +1,3 @@
-// const { response } = require("../app");
-
-// const { response } = require("express");
-
-// const { response } = require("../app");
-
 console.log("Frontend js is running here");
 
 function itemTemplate(item) {

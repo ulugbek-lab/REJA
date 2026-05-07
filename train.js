@@ -1,8 +1,14 @@
-//MIT TASK D
-function add(first, second) {
-  return first.split("").sort().join("") === second.split("").sort().join("");
+//MIT TASK E
+function reverse(value) {
+  return value.split("").reverse().join("");
 }
-console.log(add("yours", "sruoy"));
+console.log(reverse("world"));
+
+//MIT TASK D
+// function add(first, second) {
+//   return first.split("").sort().join("") === second.split("").sort().join("");
+// }
+// console.log(add("yours", "sruoy"));
 
 //MIT TASK C
 // class Shop {
