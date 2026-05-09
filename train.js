@@ -1,8 +1,17 @@
-//MIT TASK E
-function reverse(value) {
-  return value.split("").reverse().join("");
+//MIT TASK F
+function findDoublers(value) {
+  const letter = value.split("")
+  return letter.some((i) => {
+    return letter.indexOf(i) !== letter.lastIndexOf(i)
+  })
 }
-console.log(reverse("world"));
+console.log(findDoublers("banana"))
+
+//MIT TASK E
+// function reverse(value) {
+//   return value.split("").reverse().join("");
+// }
+// console.log(reverse("world"));
 
 //MIT TASK D
 // function add(first, second) {
