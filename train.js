@@ -1,11 +1,27 @@
-//MIT TASK F
-function findDoublers(value) {
-  const letter = value.split("")
-  return letter.some((i) => {
-    return letter.indexOf(i) !== letter.lastIndexOf(i)
-  })
+//MIT TASK G
+
+function getHighestIndex(arr) {
+  let highestValue = arr[0];
+  let highestIndex = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > highestValue) {
+      highestValue = arr[i];
+      highestIndex = i;
+    }
+  }
+  return highestIndex;
 }
-console.log(findDoublers("banana"))
+console.log(getHighestIndex([234, 777, 212, 2, 12, 124]));//1
+
+//MIT TASK F
+// function findDoublers(value) {
+//   const letter = value.split("")
+//   return letter.some((i) => {
+//     return letter.indexOf(i) !== letter.lastIndexOf(i)
+//   })
+// }
+// console.log(findDoublers("banana"))
 
 //MIT TASK E
 // function reverse(value) {
