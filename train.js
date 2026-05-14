@@ -1,4 +1,4 @@
-// MIT TASK
+// MIT TASK H 
 function getPositive(arrs) {
   result = arrs.filter((num) => num > 0).join("");
   return result;
