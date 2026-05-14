@@ -1,19 +1,32 @@
-//MIT TASK G
-
-function getHighestIndex(arr) {
-  let highestValue = arr[0];
-  let highestIndex = 0;
-
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > highestValue) {
-      highestValue = arr[i];
-      highestIndex = i;
-    }
-  }
-  return highestIndex;
+// MIT TASK
+function getPositive(arrs) {
+  result = arrs.filter((num) => num > 0).join("");
+  return result;
 }
-console.log(getHighestIndex([234, 777, 212, 2, 12, 124]));//1
 
+console.log(getPositive([2, 34, -4, 2, -9]));
+
+//MIT TASK G
+// function getHighestIndex(arr) {
+//   let highestValue = arr[0];
+//   let highestIndex = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > highestValue) {
+//       highestValue = arr[i];
+//       highestIndex = i;
+//     }
+//   }
+//   return highestIndex;
+// }
+// console.log(getHighestIndex([234, 777, 212, 2, 12, 124]));//1
+
+// function getHighestIndex(arr) {
+//   let biggest = Math.max(...arr);
+//   return arr.indexOf(biggest);
+// }
+
+// console.log(getHighestIndex([234, 212, 2, 555, 12, 124]));
 //MIT TASK F
 // function findDoublers(value) {
 //   const letter = value.split("")
