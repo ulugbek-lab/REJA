@@ -1,10 +1,26 @@
-// MIT TASK H 
-function getPositive(arrs) {
-  result = arrs.filter((num) => num > 0).join("");
+//MIT TASK I
+function majorityElement(arr) {
+  count = {};
+  maxCount = 0;
+  let result;
+  for (let x of arr) {
+    count[x] = (count[x] || 0) + 1;
+    if (count[x] > maxCount) {
+      maxCount = count[x];
+      result = x;
+    }
+  }
   return result;
 }
+console.log(majorityElement([1, 2, 4, 5, 6, 3, 24, 323, 2, 2, 2]));
 
-console.log(getPositive([2, 34, -4, 2, -9]));
+// MIT TASK H
+// function getPositive(arrs) {
+//   result = arrs.filter((num) => num > 0).join("");
+//   return result;
+// }
+
+// console.log(getPositive([2, 34, -4, 2, -9]));
 
 //MIT TASK G
 // function getHighestIndex(arr) {
