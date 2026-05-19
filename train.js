@@ -1,18 +1,38 @@
-//MIT TASK I
-function majorityElement(arr) {
-  count = {};
-  maxCount = 0;
-  let result;
-  for (let x of arr) {
-    count[x] = (count[x] || 0) + 1;
-    if (count[x] > maxCount) {
-      maxCount = count[x];
-      result = x;
+//MIT TASK J
+function findLongestWord(str) {
+  // 1.Approach
+  // result = str.split(" ").reduce((longest, current) => {
+  //   return current.length > longest.length ? current : longest;
+  // });
+  // return result;
+
+
+  //2. Approach
+  let longest = "";
+  str.split(" ").map((word) => {
+    if (word.length > longest.length) {
+      longest = word;
     }
-  }
-  return result;
+  });
+  return longest;
 }
-console.log(majorityElement([1, 2, 4, 5, 6, 3, 24, 323, 2, 2, 2]));
+console.log(findLongestWord("i came from uzbekistan"));
+
+//MIT TASK I
+// function majorityElement(arr) {
+//   count = {};
+//   maxCount = 0;
+//   let result;
+//   for (let x of arr) {
+//     count[x] = (count[x] || 0) + 1;
+//     if (count[x] > maxCount) {
+//       maxCount = count[x];
+//       result = x;
+//     }
+//   }
+//   return result;
+// }
+// console.log(majorityElement([1, 2, 4, 5, 6, 3, 24, 323, 2, 2, 2]));
 
 // MIT TASK H
 // function getPositive(arrs) {
