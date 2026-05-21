@@ -1,22 +1,33 @@
-//MIT TASK J
-function findLongestWord(str) {
-  // 1.Approach
-  // result = str.split(" ").reduce((longest, current) => {
-  //   return current.length > longest.length ? current : longest;
-  // });
-  // return result;
-
-
-  //2. Approach
-  let longest = "";
-  str.split(" ").map((word) => {
-    if (word.length > longest.length) {
-      longest = word;
+//MIT TASK K
+function countVowels(string) {
+  let total = 0;
+  for (let k = 0; k < string.length; k++) {
+    if (["a", "e", "i", "o", "u", "y"].includes(string[k])) {
+      total += 1;
     }
-  });
-  return longest;
+  }
+  return total;
 }
-console.log(findLongestWord("i came from uzbekistan"));
+console.log(countVowels("moneropo"));
+
+//MIT TASK J
+// function findLongestWord(str) {
+// 1.Approach
+// result = str.split(" ").reduce((longest, current) => {
+//   return current.length > longest.length ? current : longest;
+// });
+// return result;
+
+//2. Approach
+//   let longest = "";
+//   str.split(" ").map((word) => {
+//     if (word.length > longest.length) {
+//       longest = word;
+//     }
+//   });
+//   return longest;
+// }
+// console.log(findLongestWord("i came from uzbekistan"));
 
 //MIT TASK I
 // function majorityElement(arr) {
